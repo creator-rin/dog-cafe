@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@import url("style2.css");
+body {
+    margin-top: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.top {
+    background-color: rgba(74,129,11,1.00);
+}
+h1 {
+    color: #496C46;
+}
+/*---topimg---*/
+.main_imgBox {
+    height: 680px;
+    overflow: hidden;
+    position: relative; }
+
+  .main_logo {
+    z-index:11;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:50%;
+    height:auto;
+}
+
+  .main_img {
+    z-index: 10;
+    opacity: 0;
+    width: 100%;
+    height: 680px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 36s 0s infinite;
+    animation: anime 36s 0s infinite;
+    background-image: url(img/01.jpg);
+}
+
+    .main_img:nth-of-type(2) {
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s; }
+
+    .main_img:nth-of-type(3) {
+      -webkit-animation-delay: 12s;
+      animation-delay: 12s; }
+
+    .main_img:nth-of-type(4) {
+      -webkit-animation-delay: 18s;
+      animation-delay: 18s; }
+
+    .main_img:nth-of-type(5) {
+      -webkit-animation-delay: 24s;
+      animation-delay: 24s; }
+
+    .main_img:nth-of-type(6) {
+      -webkit-animation-delay: 30s;
+      animation-delay: 30s; }
+
+  .main_imgM {
+    opacity: 0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-animation: anime 36s 0s infinite;
+    animation: anime 36s 0s infinite; }
+
+    .main_imgM:nth-of-type(2) {
+      -webkit-animation-delay: 6s;
+      animation-delay: 6s; }
+
+    .main_imgM:nth-of-type(3) {
+      -webkit-animation-delay: 12s;
+      animation-delay: 12s; }
+
+    .main_imgM:nth-of-type(4) {
+      -webkit-animation-delay: 18s;
+      animation-delay: 18s; }
+
+    .main_imgM:nth-of-type(5) {
+      -webkit-animation-delay: 24s;
+      animation-delay: 24s; }
+
+    .main_imgM:nth-of-type(6) {
+      -webkit-animation-delay: 30s;
+      animation-delay: 30s; }
+
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+         transform: scale(1.2);
+                    z-index:9;
+    }
+    100% { opacity: 0 }
+}
+
+@-webkit-keyframes anime {
+    0% {
+        opacity: 0;
+    }
+    8% {
+        opacity: 1;
+    }
+    17% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+         -webkit-transform: scale(1.2);
+         z-index:9;
+    }
+    100% { opacity: 0 }
+}
+/*---topimgここまで---*/
+/*---menubar---*/
+#menu li {
+    list-style-type: none;
+    color: #292929;
+	 -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+.icon {
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 120px;
+}
+
+.menu li:hover {
+    background-color: #CBB100;
+    }
+
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    border-style: none;
+}
+h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*.news-img article {
+	flex: 1 1 250px;
+}*/
+/*---menu---*/
+.menu1 .img-in {
+    display: flex;
+    justify-content:center;
+	max-width: 100%;
+	height: auto;
+}
+.imglink img {
+    margin-left: 30px;
+}
+
+
+
+
+
+/*---news---*/
+.news-img {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+article a:hover {
+  opacity: 0.8;
+}
+article a .photo {
+  min-height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+article a .text {
+  margin: 10px;
+}
+.container .bottom {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 1.00);
+}
+.text h2 {
+  font-size: 18px;
+}
+.text p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 30px auto;
+  justify-content: center;
+}
+.container article {
+	flex: 1 1 300px;
+	display: flex;
+}
+.container article a {
+	flex: 1;
+	margin: 10px;
+	display: block;
+	border: solid 1px #ddd;
+	border: solid 1px var(--gray-color);
+	color: inherit;
+	text-decoration: none;
+}
+.news-img {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 100%;
+}
+article a:hover {
+	opacity: 0.8;
+}
+article a .photo {
+	min-height: 150px;
+	background-position: center;
+	background-size: cover;
+}
+article a .text {
+	margin: 10px;
+}
+.container .bottom {
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,1.00);
+}
+
+.text h2  {
+	font-size: 18px;
+}
+.text p {
+	font-size: 14px;
+	opacity: 0.8;
+}
+/*---accsess---*/
+#accsess table {
+    display: flex;
+	justify-content: center;
+}
+
+
+/*---footer---*/
+.coppyright {
+    background-color: #80907f;
+    color: #FFFFFF;
+}
+.footer-inner {
+    display: flex;
+	justify-content: center;
+
+}
+
+
+
+
+
+@media (min-width:1000px){
+.news-img article {
+	flex: 1 1 25%;
+}
+	
+}
+@media (max-width: 599px) {
+/* トグルボタン 599px以下*/
+#menubtn {
+	padding: 6px 12px;
+	border: solid 1px #aaaaaa;
+	border-radius: 5px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	cursor: pointer;
+}
+#menubtn:hover {
+	background-color: #dddddd
+}
+#menubtn:focus {
+	outline: none
+}
+#menubtn i {
+	color: #F41A1E;
+	font-size: 18px
+}
+#menubtn span {
+	display: inline-block;
+	text-indent: -9999px;
+	}
+}
+/*600px以上
+NEWSを横並びにする*/
+@media (min-width:600px){
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container article {
+    flex: 0 0 47%;
+    display: flex;
+  }
+  .container article a {
+    flex: 1;
+  }
+.kizi .img {
+    display: flex;
+	justify-content: center;
+}
+p img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+	
+}

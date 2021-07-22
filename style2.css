@@ -1,0 +1,94 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+    text-align: center;
+    color: #292929;
+}
+.header {
+   
+    background-color: #FFFFFF;
+}
+.site{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sitemenu {
+  text-decoration: underline;
+}
+#menu li a {
+    text-decoration: none;
+    color: #292929;
+}
+#menu li {
+  list-style-type: none;
+  color: #FFFFFF;
+}
+.top {
+  background-color: rgba(74, 129, 11, 1.00);
+}
+h1 {
+    color: #496C46;
+}
+.title{
+    text-decoration: underline;
+    font-size: 18px;
+}
+.soto {
+    background-color: #DCD3D3;
+}
+
+
+
+@media (max-width: 599px) {
+  /* トグルボタン 599px以下*/
+    #menubtn {
+    padding: 6px 12px;
+    border: solid 1px #aaaaaa;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    cursor: pointer;
+  }
+  #menubtn:hover {
+    background-color: #dddddd
+  }
+  #menubtn:focus {
+    outline: none
+  }
+  #menubtn i {
+    color: #CBB100;
+    font-size: 18px
+  }
+  #menubtn span {
+    display: inline-block;
+    text-indent: -9999px;
+  }
+  .menu {
+    display: none;
+  }
+	
+}
+@media (min-width:600px) {
+  
+ #menubtn {
+    display: none;
+  }
+  #menu {
+    display: block !important
+  }
+  .menu ul {
+    display: flex;
+  }
+  .menu li {
+    margin-right: 20px;
+  }
+
+
+
+	
+}
